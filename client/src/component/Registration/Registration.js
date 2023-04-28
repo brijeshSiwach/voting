@@ -187,11 +187,11 @@ export default class Registration extends Component {
                   </div>
                   <div className="div-li">
                     <label className={"label-r"}>
-                      Phone number <span style={{ color: "tomato" }}>*</span>
+                      AAdhar number <span style={{ color: "tomato" }}>*</span>
                       <input
                         className={"input-r"}
                         type="number"
-                        placeholder="eg. 9841234567"
+                        placeholder="eg. 123456789012"
                         value={this.state.voterPhone}
                         onChange={this.updateVoterPhone}
                       />
@@ -207,7 +207,7 @@ export default class Registration extends Component {
                   <button
                     className="btn-add"
                     disabled={
-                      this.state.voterPhone.length !== 10 ||
+                      this.state.voterPhone.length !== 12 ||
                       this.state.currentVoter.isVerified
                     }
                     onClick={this.registerAsVoter}
